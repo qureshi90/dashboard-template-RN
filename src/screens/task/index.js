@@ -3,7 +3,7 @@ import {View, Text, Image} from 'react-native';
 import styles from './style.js';
 import ListItem from '../../components/listItem.js';
 
-const Product = () => {
+const Task = () => {
   return (
     <View style={styles.container}>
       <View style={styles.photoContainer}>
@@ -28,4 +28,4 @@ const Product = () => {
   );
 };
 
-export default Product;
+export default Task;
