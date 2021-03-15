@@ -4,10 +4,11 @@ import React from 'react';
 // import SignUp from '../screens/signup';
 // import Dashboard from '../screens/dashboard';
 // import Order from '../screens/order';
-import Product from '../screens/product';
+// import Product from '../screens/product';
+import Customer from '../screens/customer';
 
 const Navigator = () => {
-  return <Product />;
+  return <Customer />;
 };
 
 export default Navigator;
