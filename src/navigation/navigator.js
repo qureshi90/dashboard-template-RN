@@ -3,10 +3,11 @@ import React from 'react';
 // import SignIn from '../screens/login';
 // import SignUp from '../screens/signup';
 // import Dashboard from '../screens/dashboard';
-import Order from '../screens/order';
+// import Order from '../screens/order';
+import Product from '../screens/product';
 
 const Navigator = () => {
-  return <Order />;
+  return <Product />;
 };
 
 export default Navigator;
