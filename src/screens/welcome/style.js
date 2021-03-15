@@ -1,4 +1,5 @@
 import {StyleSheet} from 'react-native';
+import {blue} from '../../constants/color.js';
 
 const styles = StyleSheet.create({
   container: {
@@ -8,7 +9,7 @@ const styles = StyleSheet.create({
   },
   heading: {
     marginHorizontal: '20%',
-    color: '#3068CC',
+    color: blue,
     fontSize: 26,
     fontWeight: 'bold',
     marginVertical: 30,

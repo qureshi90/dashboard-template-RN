@@ -1,6 +1,6 @@
 import React from 'react';
 import {Text, StyleSheet, Pressable} from 'react-native';
-// import {blue} from '../constants/color.js';
+import {blue} from '../constants/color.js';
 
 const ButtonBlue = props => {
   return (
@@ -19,7 +19,7 @@ const styles = StyleSheet.create({
     marginVertical: 10,
     justifyContent: 'center',
     borderRadius: 30,
-    backgroundColor: '#3068CC',
+    backgroundColor: blue,
   },
   text: {
     fontSize: 16,
