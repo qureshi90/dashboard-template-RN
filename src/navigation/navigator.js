@@ -10,7 +10,7 @@ import Order from '../screens/order';
 import Task from '../screens/task';
 import Customer from '../screens/customer';
 import Product from '../screens/product';
-import Customers from '../screens/customers';
+// import Customers from '../screens/customers';
 
 const Stack = createStackNavigator();
 
@@ -22,6 +22,10 @@ const Navigator = () => {
         <Stack.Screen name="login" component={SignIn} />
         <Stack.Screen name="signup" component={SignUp} />
         <Stack.Screen name="dashboard" component={Dashboard} />
+        <Stack.Screen name="order" component={Order} />
+        <Stack.Screen name="task" component={Task} />
+        <Stack.Screen name="customer" component={Customer} />
+        <Stack.Screen name="product" component={Product} />
       </Stack.Navigator>
     </NavigationContainer>
   );
