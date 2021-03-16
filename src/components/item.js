@@ -9,6 +9,7 @@ const Item = props => {
         <View>
           <Image
             source={require('../assets/images/headshot.jpg')}
+            // source={{uri: props.img}}
             style={styles.photo}
           />
         </View>

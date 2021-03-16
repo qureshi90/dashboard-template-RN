@@ -1,7 +1,6 @@
 import React from 'react';
 import {View, Text, Image, Pressable} from 'react-native';
 import styles from './style.js';
-// import ButtonBlue from '../../components/buttonBlue';
 
 const Dashboard = ({navigation}) => {
   return (
@@ -18,7 +17,7 @@ const Dashboard = ({navigation}) => {
         </Pressable>
         <Pressable
           style={styles.card}
-          onPress={() => navigation.navigate('customer', {name: 'dashboard'})}>
+          onPress={() => navigation.navigate('customers', {name: 'dashboard'})}>
           <Image
             style={styles.icon}
             source={require('../../assets/icons/analytics.png')}
@@ -27,7 +26,7 @@ const Dashboard = ({navigation}) => {
         </Pressable>
         <Pressable
           style={styles.card}
-          onPress={() => navigation.navigate('order', {name: 'dashboard'})}>
+          onPress={() => navigation.navigate('orders', {name: 'dashboard'})}>
           <Image
             style={styles.icon}
             source={require('../../assets/icons/tasks.png')}

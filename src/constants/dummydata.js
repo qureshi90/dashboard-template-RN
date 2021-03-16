@@ -51,6 +51,59 @@ export const customers_data = [
   },
 ];
 
+export const orders_data = [
+  {
+    name: 'Skater Dress 1',
+    description: 'Monica Perez - Stripe - #43555',
+    status: '$1.00',
+  },
+  {
+    name: 'Skater Dress 2',
+    description: 'Monica Perez - Stripe - #43555',
+    status: '$2.00',
+  },
+  {
+    name: 'Skater Dress 3',
+    description: 'Monica Perez - Stripe - #43555',
+    status: '$3.00',
+  },
+  {
+    name: 'Skater Dress 4',
+    description: 'Monica Perez - Stripe - #43555',
+    status: '$4.00',
+  },
+  {
+    name: 'Skater Dress 5',
+    description: 'Monica Perez - Stripe - #43555',
+    status: '$5.00',
+  },
+  {
+    name: 'Skater Dress 6',
+    description: 'Monica Perez - Stripe - #43555',
+    status: '$6.00',
+  },
+  {
+    name: 'Skater Dress 7',
+    description: 'Monica Perez - Stripe - #43555',
+    status: '$7.00',
+  },
+  {
+    name: 'Skater Dress 8',
+    description: 'Monica Perez - Stripe - #43555',
+    status: '$8.00',
+  },
+  {
+    name: 'Skater Dress 9',
+    description: 'Monica Perez - Stripe - #43555',
+    status: '$9.00',
+  },
+  {
+    name: 'Skater Dress 10',
+    description: 'Monica Perez - Stripe - #43555',
+    status: '$10.00',
+  },
+];
+
 // let task = {
 //   due_date: '2 Jul 2010',
 //   status: 'In Progress',
