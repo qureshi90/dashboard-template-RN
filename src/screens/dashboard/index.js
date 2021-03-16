@@ -8,7 +8,7 @@ const Dashboard = ({navigation}) => {
       <View style={styles.block}>
         <Pressable
           style={styles.card}
-          onPress={() => navigation.navigate('customers', {name: 'dashboard'})}>
+          onPress={() => navigation.navigate('analytics', {name: 'dashboard'})}>
           <Image
             style={styles.icon}
             source={require('../../assets/icons/analytics.png')}

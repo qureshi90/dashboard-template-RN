@@ -16,7 +16,8 @@ import Tasks from '../screens/tasks';
 import Sales from '../screens/sales';
 import Products from '../screens/products';
 // import Notifications from '../screens/notifications';
-import ActivityFeed from '../screens/activityFeed';
+// import ActivityFeed from '../screens/activityFeed';
+import Analytics from '../screens/analytics';
 
 const Stack = createStackNavigator();
 
@@ -25,7 +26,7 @@ const Navigator = () => {
     <NavigationContainer>
       <Stack.Navigator>
         {/* <Stack.Screen name="notifications" component={Notifications} /> */}
-        <Stack.Screen name="activityFeed" component={ActivityFeed} />
+        {/* <Stack.Screen name="activityFeed" component={ActivityFeed} /> */}
         <Stack.Screen name="welcome" component={Welcome} />
         <Stack.Screen
           name="login"
@@ -85,6 +86,11 @@ const Navigator = () => {
         <Stack.Screen
           name="products"
           component={Products}
+          options={({route}) => ({title: route.params.name})}
+        />
+        <Stack.Screen
+          name="analytics"
+          component={Analytics}
           options={({route}) => ({title: route.params.name})}
         />
       </Stack.Navigator>
