@@ -104,6 +104,59 @@ export const orders_data = [
   },
 ];
 
+export const tasks_data = [
+  {
+    name: 'Publish new product page 1',
+    description: 'Due Date: Jul 1',
+    status: 'Done',
+  },
+  {
+    name: 'Publish new product page 2',
+    description: 'Due Date: Jul 2',
+    status: 'Done',
+  },
+  {
+    name: 'Publish new product page 3',
+    description: 'Due Date: Jul 3',
+    status: 'Done',
+  },
+  {
+    name: 'Publish new product page 4',
+    description: 'Due Date: Jul 4',
+    status: 'Done',
+  },
+  {
+    name: 'Publish new product page 5',
+    description: 'Due Date: Jul 5',
+    status: 'Done',
+  },
+  {
+    name: 'Publish new product page 6',
+    description: 'Due Date: Jul 6',
+    status: 'Done',
+  },
+  {
+    name: 'Publish new product page 7',
+    description: 'Due Date: Jul 7',
+    status: 'Done',
+  },
+  {
+    name: 'Publish new product page 8',
+    description: 'Due Date: Jul 8',
+    status: 'Done',
+  },
+  {
+    name: 'Publish new product page 9',
+    description: 'Due Date: Jul 9',
+    status: 'Done',
+  },
+  {
+    name: 'Publish new product page 10',
+    description: 'Due Date: Jul 10',
+    status: 'Done',
+  },
+];
+
 // let task = {
 //   due_date: '2 Jul 2010',
 //   status: 'In Progress',

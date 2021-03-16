@@ -38,7 +38,7 @@ const Dashboard = ({navigation}) => {
       <View style={styles.block}>
         <Pressable
           style={styles.card}
-          onPress={() => navigation.navigate('task', {name: 'dashboard'})}>
+          onPress={() => navigation.navigate('tasks', {name: 'dashboard'})}>
           <Image
             style={styles.icon}
             source={require('../../assets/icons/tasks.png')}
