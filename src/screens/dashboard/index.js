@@ -16,7 +16,7 @@ const Dashboard = ({navigation}) => {
         </Pressable>
         <Pressable
           style={styles.card}
-          onPress={() => navigation.navigate('customer')}>
+          onPress={() => navigation.navigate('customer', {name: 'dashboard'})}>
           <Image
             style={styles.icon}
             source={require('../../assets/icons/analytics.png')}
@@ -25,7 +25,7 @@ const Dashboard = ({navigation}) => {
         </Pressable>
         <Pressable
           style={styles.card}
-          onPress={() => navigation.navigate('order')}>
+          onPress={() => navigation.navigate('order', {name: 'dashboard'})}>
           <Image
             style={styles.icon}
             source={require('../../assets/icons/tasks.png')}
@@ -37,7 +37,7 @@ const Dashboard = ({navigation}) => {
       <View style={styles.block}>
         <Pressable
           style={styles.card}
-          onPress={() => navigation.navigate('task')}>
+          onPress={() => navigation.navigate('task', {name: 'dashboard'})}>
           <Image
             style={styles.icon}
             source={require('../../assets/icons/tasks.png')}
@@ -53,7 +53,7 @@ const Dashboard = ({navigation}) => {
         </Pressable>
         <Pressable
           style={styles.card}
-          onPress={() => navigation.navigate('product')}>
+          onPress={() => navigation.navigate('product', {name: 'dashboard'})}>
           <Image
             style={styles.icon}
             source={require('../../assets/icons/analytics.png')}

@@ -8,10 +8,13 @@ const Welcome = ({navigation}) => {
   return (
     <View style={styles.container}>
       <Text style={styles.heading}>Welcome to your dashboard.</Text>
-      <ButtonBlue text="Log In" onPress={() => navigation.navigate('login')} />
+      <ButtonBlue
+        text="Log In"
+        onPress={() => navigation.navigate('login', {name: 'welcome'})}
+      />
       <ButtonWhite
         text="Sign Up"
-        onPress={() => navigation.navigate('signup')}
+        onPress={() => navigation.navigate('signup', {name: 'welcome'})}
       />
     </View>
   );

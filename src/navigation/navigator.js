@@ -19,13 +19,41 @@ const Navigator = () => {
     <NavigationContainer>
       <Stack.Navigator>
         <Stack.Screen name="welcome" component={Welcome} />
-        <Stack.Screen name="login" component={SignIn} />
-        <Stack.Screen name="signup" component={SignUp} />
-        <Stack.Screen name="dashboard" component={Dashboard} />
-        <Stack.Screen name="order" component={Order} />
-        <Stack.Screen name="task" component={Task} />
-        <Stack.Screen name="customer" component={Customer} />
-        <Stack.Screen name="product" component={Product} />
+        <Stack.Screen
+          name="login"
+          component={SignIn}
+          options={({route}) => ({title: route.params.name})}
+        />
+        <Stack.Screen
+          name="signup"
+          component={SignUp}
+          options={({route}) => ({title: route.params.name})}
+        />
+        <Stack.Screen
+          name="dashboard"
+          component={Dashboard}
+          options={({route}) => ({title: route.params.name})}
+        />
+        <Stack.Screen
+          name="order"
+          component={Order}
+          options={({route}) => ({title: route.params.name})}
+        />
+        <Stack.Screen
+          name="task"
+          component={Task}
+          options={({route}) => ({title: route.params.name})}
+        />
+        <Stack.Screen
+          name="customer"
+          component={Customer}
+          options={({route}) => ({title: route.params.name})}
+        />
+        <Stack.Screen
+          name="product"
+          component={Product}
+          options={({route}) => ({title: route.params.name})}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );

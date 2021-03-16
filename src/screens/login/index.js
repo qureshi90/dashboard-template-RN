@@ -12,7 +12,7 @@ const SignIn = ({navigation}) => {
         <TextInput style={styles.input} placeholder="Password" />
         <ButtonBlue
           text="Log In"
-          onPress={() => navigation.navigate('dashboard')}
+          onPress={() => navigation.navigate('dashboard', {name: 'login'})}
         />
       </View>
     </>
