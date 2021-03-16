@@ -1,42 +1,25 @@
 import React from 'react';
-import {View, Text, Image} from 'react-native';
+import {ScrollView} from 'react-native';
 import styles from './style.js';
 import Item from '../../components/item.js';
+import {customers_data} from '../../constants/dummydata.js';
 
 const Customers = () => {
   return (
-    <View style={styles.container}>
-      <Item
-        name={'John Doe 1'}
-        description={'iphone - Total Spend $1'}
-        status={'Created Jul 1'}
-      />
-      <Item
-        name={'John Doe 2'}
-        description={'iphone - Total Spend $2'}
-        status={'Created Jul 2'}
-      />
-      <Item
-        name={'John Doe 1'}
-        description={'iphone - Total Spend $1'}
-        status={'Created Jul 1'}
-      />
-      <Item
-        name={'John Doe 2'}
-        description={'iphone - Total Spend $2'}
-        status={'Created Jul 2'}
-      />
-      <Item
-        name={'John Doe 1'}
-        description={'iphone - Total Spend $1'}
-        status={'Created Jul 1'}
-      />
-      <Item
-        name={'John Doe 2'}
-        description={'iphone - Total Spend $2'}
-        status={'Created Jul 2'}
-      />
-    </View>
+    <>
+      <ScrollView style={styles.container}>
+        {customers_data.map((res, index) => {
+          return (
+            <Item
+              key={index}
+              name={res.name}
+              description={res.description}
+              status={res.status}
+            />
+          );
+        })}
+      </ScrollView>
+    </>
   );
 };
 
