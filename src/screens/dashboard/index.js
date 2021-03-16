@@ -45,7 +45,9 @@ const Dashboard = ({navigation}) => {
           />
           <Text>Tasks</Text>
         </Pressable>
-        <Pressable style={styles.card}>
+        <Pressable
+          style={styles.card}
+          onPress={() => navigation.navigate('sales', {name: 'dashboard'})}>
           <Image
             style={styles.icon}
             source={require('../../assets/icons/analytics.png')}

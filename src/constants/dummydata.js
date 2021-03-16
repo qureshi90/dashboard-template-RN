@@ -157,6 +157,59 @@ export const tasks_data = [
   },
 ];
 
+export const sales_data = [
+  {
+    name: 'Sales 1',
+    description: 'Due Date: Jul 1',
+    status: 'Done',
+  },
+  {
+    name: 'Sales 2',
+    description: 'Due Date: Jul 2',
+    status: 'Done',
+  },
+  {
+    name: 'Sales 3',
+    description: 'Due Date: Jul 3',
+    status: 'Done',
+  },
+  {
+    name: 'Sales 4',
+    description: 'Due Date: Jul 4',
+    status: 'Done',
+  },
+  {
+    name: 'Sales 5',
+    description: 'Due Date: Jul 5',
+    status: 'Done',
+  },
+  {
+    name: 'Sales 6',
+    description: 'Due Date: Jul 6',
+    status: 'Done',
+  },
+  {
+    name: 'Sales 7',
+    description: 'Due Date: Jul 7',
+    status: 'Done',
+  },
+  {
+    name: 'Sales 8',
+    description: 'Due Date: Jul 8',
+    status: 'Done',
+  },
+  {
+    name: 'Sales 9',
+    description: 'Due Date: Jul 9',
+    status: 'Done',
+  },
+  {
+    name: 'Sales 10',
+    description: 'Due Date: Jul 10',
+    status: 'Done',
+  },
+];
+
 // let task = {
 //   due_date: '2 Jul 2010',
 //   status: 'In Progress',
