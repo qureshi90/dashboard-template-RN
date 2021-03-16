@@ -15,6 +15,7 @@ import Orders from '../screens/orders';
 import Tasks from '../screens/tasks';
 import Sales from '../screens/sales';
 import Products from '../screens/products';
+// import Notifications from '../screens/notifications';
 
 const Stack = createStackNavigator();
 
@@ -22,6 +23,7 @@ const Navigator = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator>
+        {/* <Stack.Screen name="notifications" component={Notifications} /> */}
         <Stack.Screen name="welcome" component={Welcome} />
         <Stack.Screen
           name="login"
