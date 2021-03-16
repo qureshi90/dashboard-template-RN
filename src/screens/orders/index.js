@@ -4,7 +4,7 @@ import styles from './style.js';
 import Item from '../../components/item.js';
 import {orders_data} from '../../constants/dummydata.js';
 
-const Orders = () => {
+const Orders = ({navigation}) => {
   return (
     <>
       <ScrollView style={styles.container}>
@@ -15,6 +15,7 @@ const Orders = () => {
               name={res.name}
               description={res.description}
               status={res.status}
+              onPress={() => navigation.navigate('order', {name: 'orders'})}
             />
           );
         })}

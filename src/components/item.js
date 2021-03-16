@@ -1,10 +1,10 @@
 import React from 'react';
-import {View, Text, Image, StyleSheet} from 'react-native';
+import {View, Text, Image, StyleSheet, Pressable} from 'react-native';
 import {gray, darkGray} from '../constants/color.js';
 
 const Item = props => {
   return (
-    <View style={styles.container}>
+    <Pressable style={styles.container} onPress={props.onPress}>
       <View style={styles.id}>
         <View>
           <Image
@@ -23,7 +23,7 @@ const Item = props => {
       <View>
         <Text style={styles.status}>{props.status}</Text>
       </View>
-    </View>
+    </Pressable>
   );
 };
 
