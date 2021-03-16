@@ -210,6 +210,59 @@ export const sales_data = [
   },
 ];
 
+export const products_data = [
+  {
+    name: 'Zapatos shows 1',
+    description: 'The Black 9 Shoes look 1',
+    status: 'Created Jul 1',
+  },
+  {
+    name: 'Zapatos shows 2',
+    description: 'The Black 9 Shoes look 2',
+    status: 'Created Jul 2',
+  },
+  {
+    name: 'Zapatos shows 3',
+    description: 'The Black 9 Shoes look 3',
+    status: 'Created Jul 3',
+  },
+  {
+    name: 'Zapatos shows 4',
+    description: 'The Black 9 Shoes look 4',
+    status: 'Created Jul 4',
+  },
+  {
+    name: 'Zapatos shows 5',
+    description: 'The Black 9 Shoes look 5',
+    status: 'Created Jul 5',
+  },
+  {
+    name: 'Zapatos shows 6',
+    description: 'The Black 9 Shoes look 6',
+    status: 'Created Jul 6',
+  },
+  {
+    name: 'Zapatos shows 7',
+    description: 'The Black 9 Shoes look 7',
+    status: 'Created Jul 7',
+  },
+  {
+    name: 'Zapatos shows 8',
+    description: 'The Black 9 Shoes look 8',
+    status: 'Created Jul 8',
+  },
+  {
+    name: 'Zapatos shows 9',
+    description: 'The Black 9 Shoes look 9',
+    status: 'Created Jul 9',
+  },
+  {
+    name: 'Zapatos shows 10',
+    description: 'The Black 9 Shoes look 10',
+    status: 'Created Jul 10',
+  },
+];
+
 // let task = {
 //   due_date: '2 Jul 2010',
 //   status: 'In Progress',

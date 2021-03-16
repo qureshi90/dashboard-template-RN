@@ -14,6 +14,7 @@ import Customers from '../screens/customers';
 import Orders from '../screens/orders';
 import Tasks from '../screens/tasks';
 import Sales from '../screens/sales';
+import Products from '../screens/products';
 
 const Stack = createStackNavigator();
 
@@ -75,6 +76,11 @@ const Navigator = () => {
         <Stack.Screen
           name="sales"
           component={Sales}
+          options={({route}) => ({title: route.params.name})}
+        />
+        <Stack.Screen
+          name="products"
+          component={Products}
           options={({route}) => ({title: route.params.name})}
         />
       </Stack.Navigator>
