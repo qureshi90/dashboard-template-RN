@@ -3,7 +3,7 @@ import {View, Text, TextInput} from 'react-native';
 import styles from './style.js';
 import ButtonBlue from '../../components/buttonBlue';
 
-const SignUp = () => {
+const SignUp = ({navigation}) => {
   return (
     <>
       <Text style={styles.heading}>Create new account</Text>
