@@ -1,45 +1,55 @@
-import React from 'react';
-import SideMenu from 'react-native-side-menu';
-import {View, Text, StyleSheet, Animated} from 'react-native';
+import React, {useState} from 'react';
+import {View, Text, StyleSheet, Pressable} from 'react-native';
 
-const ContentView = () => {
+import Drawer from 'react-native-drawer';
+
+const Burger = () => {
+  const [toggle, setToggle] = useState(false);
+
+  const ContentView = () => {
+    return (
+      <View style={styles.content}>
+        <Pressable onPress={() => setToggle(true)}>
+          <Text>toggle</Text>
+        </Pressable>
+        <Text>Welcome to React Native!</Text>
+        <Text>To get started, edit index.js</Text>
+        <Text>Press Cmd+R to reload Cmd+Control+Z for dev menu</Text>
+      </View>
+    );
+  };
+
+  const Menu = ({navigation}) => {
+    return (
+      <View style={styles.container}>
+        <Text>Home</Text>
+        {/* <HomeOutlined /> */}
+        {/* <PoweroffOutlined /> */}
+        {/* <BellOutlined /> */}
+        <Pressable onPress={() => navigation.navigate('dashboard')}>
+          <Text>Dashboard</Text>
+        </Pressable>
+        <Text>Orders</Text>
+        <Text>Notifications</Text>
+        <Text>Activity</Text>
+        <Text>Logout</Text>
+      </View>
+    );
+  };
+
   return (
-    <View style={styles.content}>
-      <Text>Welcome to React Native!</Text>
-      <Text>To get started, edit index.js</Text>
-      <Text>Press Cmd+R to reload Cmd+Control+Z for dev menu</Text>
-    </View>
-  );
-};
-
-const Menu = () => {
-  return (
-    <View style={styles.container}>
-      <Text>Home</Text>
-      <Text>Dashboard</Text>
-      <Text>Orders</Text>
-      <Text>Notifications</Text>
-      <Text>Activity</Text>
-      <Text>Logout</Text>
-    </View>
-  );
-};
-
-const Application = () => {
-  const menu = <Menu navigator={navigator} />;
-
-  return (
-    <SideMenu
-      menu={menu}
-      animationFunction={(prop, value) =>
-        Animated.spring(prop, {
-          toValue: value,
-          friction: 8,
-          useNativeDriver: true,
-        })
-      }>
-      <ContentView />
-    </SideMenu>
+    <>
+      <Drawer
+        open={toggle}
+        onClose={() => setToggle(false)}
+        type={'overlay'}
+        captureGestures={true}
+        acceptTap={true}
+        openDrawerOffset={viewport => viewport.width - 280}
+        content={<Menu />}>
+        <ContentView />
+      </Drawer>
+    </>
   );
 };
 
@@ -57,7 +67,9 @@ const styles = StyleSheet.create({
   },
 });
 
-export default Application;
+export default Burger;
+
+///////////////////////////////////////////////////////////////////////////////
 
 // import 'react-native-gesture-handler';
 // import React from 'react';
