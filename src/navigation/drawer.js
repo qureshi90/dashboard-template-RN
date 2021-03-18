@@ -2,17 +2,15 @@ import React from 'react';
 import SideMenu from 'react-native-side-menu';
 import {View, Text, StyleSheet, Animated} from 'react-native';
 
-class ContentView extends React.Component {
-  render() {
-    return (
-      <View style={styles.content}>
-        <Text>Welcome to React Native!</Text>
-        <Text>To get started, edit index.ios.js</Text>
-        <Text>Press Cmd+R to reload Cmd+Control+Z for dev menu</Text>
-      </View>
-    );
-  }
-}
+const ContentView = () => {
+  return (
+    <View style={styles.content}>
+      <Text>Welcome to React Native!</Text>
+      <Text>To get started, edit index.js</Text>
+      <Text>Press Cmd+R to reload Cmd+Control+Z for dev menu</Text>
+    </View>
+  );
+};
 
 const Menu = () => {
   return (
@@ -22,29 +20,28 @@ const Menu = () => {
       <Text>Orders</Text>
       <Text>Notifications</Text>
       <Text>Activity</Text>
+      <Text>Logout</Text>
     </View>
   );
 };
 
-class Application extends React.Component {
-  render() {
-    const menu = <Menu navigator={navigator} />;
+const Application = () => {
+  const menu = <Menu navigator={navigator} />;
 
-    return (
-      <SideMenu
-        menu={menu}
-        animationFunction={(prop, value) =>
-          Animated.spring(prop, {
-            toValue: value,
-            friction: 8,
-            useNativeDriver: true,
-          })
-        }>
-        <ContentView />
-      </SideMenu>
-    );
-  }
-}
+  return (
+    <SideMenu
+      menu={menu}
+      animationFunction={(prop, value) =>
+        Animated.spring(prop, {
+          toValue: value,
+          friction: 8,
+          useNativeDriver: true,
+        })
+      }>
+      <ContentView />
+    </SideMenu>
+  );
+};
 
 const styles = StyleSheet.create({
   container: {
@@ -56,7 +53,7 @@ const styles = StyleSheet.create({
   },
   content: {
     flex: 1,
-    backgroundColor: 'blue',
+    backgroundColor: 'white',
   },
 });
 
