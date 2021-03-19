@@ -1,5 +1,6 @@
 import 'react-native-gesture-handler';
 import React from 'react';
+import {LogBox} from 'react-native';
 import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
 import Welcome from '../screens/welcome';
@@ -15,13 +16,18 @@ import Orders from '../screens/orders';
 import Tasks from '../screens/tasks';
 import Sales from '../screens/sales';
 import Products from '../screens/products';
-// import Notifications from '../screens/notifications';
-// import ActivityFeed from '../screens/activityFeed';
+import Notifications from '../screens/notifications';
+import ActivityFeed from '../screens/activityFeed';
 import Analytics from '../screens/analytics';
+import Home from '../screens/home';
 
 const Stack = createStackNavigator();
 
 const Navigator = () => {
+  LogBox.ignoreLogs([
+    'componentWillReceiveProps has been renamed',
+    'componentWillMount has been renamed',
+  ]);
   return (
     <NavigationContainer>
       <Stack.Navigator>
@@ -38,6 +44,7 @@ const Navigator = () => {
           component={SignUp}
           options={({route}) => ({title: route.params.name})}
         />
+        <Stack.Screen name="home" component={Home} />
         <Stack.Screen
           name="dashboard"
           component={Dashboard}
@@ -91,6 +98,16 @@ const Navigator = () => {
         <Stack.Screen
           name="analytics"
           component={Analytics}
+          options={({route}) => ({title: route.params.name})}
+        />
+        <Stack.Screen
+          name="notifications"
+          component={Notifications}
+          options={({route}) => ({title: route.params.name})}
+        />
+        <Stack.Screen
+          name="feed"
+          component={ActivityFeed}
           options={({route}) => ({title: route.params.name})}
         />
       </Stack.Navigator>
