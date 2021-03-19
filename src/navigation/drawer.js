@@ -22,17 +22,17 @@ const Burger = () => {
   const Menu = ({navigation}) => {
     return (
       <View style={styles.container}>
-        <Text>Home</Text>
+        <View style={styles.list}>
+          <Text style={styles.listItem}>Home</Text>
+          <Text style={styles.listItem}>Dashboard</Text>
+          <Text style={styles.listItem}>Orders</Text>
+          <Text style={styles.listItem}>Notifications</Text>
+          <Text style={styles.listItem}>Activity</Text>
+          <Text style={styles.listItem}>Logout</Text>
+        </View>
         {/* <HomeOutlined /> */}
         {/* <PoweroffOutlined /> */}
         {/* <BellOutlined /> */}
-        <Pressable onPress={() => navigation.navigate('dashboard')}>
-          <Text>Dashboard</Text>
-        </Pressable>
-        <Text>Orders</Text>
-        <Text>Notifications</Text>
-        <Text>Activity</Text>
-        <Text>Logout</Text>
       </View>
     );
   };
@@ -43,9 +43,8 @@ const Burger = () => {
         open={toggle}
         onClose={() => setToggle(false)}
         type={'overlay'}
-        captureGestures={true}
-        acceptTap={true}
-        openDrawerOffset={viewport => viewport.width - 280}
+        tapToClose={true}
+        openDrawerOffset={0.25}
         content={<Menu />}>
         <ContentView />
       </Drawer>
@@ -59,7 +58,15 @@ const styles = StyleSheet.create({
     backgroundColor: 'cyan',
     flexDirection: 'column',
     justifyContent: 'center',
-    alignItems: 'center',
+    // marginLeft: 50,
+    // alignItems: 'center',
+  },
+  list: {
+    marginLeft: 50,
+  },
+  listItem: {
+    marginVertical: 10,
+    fontSize: 16,
   },
   content: {
     flex: 1,
