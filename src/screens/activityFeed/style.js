@@ -1,15 +1,18 @@
 import {StyleSheet} from 'react-native';
-// import {gray, darkGray} from '../../constants/color.js';
+import {white} from '../../constants/color.js';
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    backgroundColor: white,
   },
   header: {
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-    backgroundColor: 'cyan',
+    backgroundColor: white,
+    borderBottomWidth: 2,
+    borderBottomColor: 'cyan',
   },
   menuContainer: {
     flex: 1,

@@ -1,7 +1,12 @@
 import {StyleSheet} from 'react-native';
+import {white} from '../../constants/color.js';
 
 const styles = StyleSheet.create({
   container: {
+    flex: 1,
+    backgroundColor: white,
+  },
+  menuContainer: {
     flex: 1,
     backgroundColor: 'cyan',
     flexDirection: 'column',
@@ -23,7 +28,9 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-    backgroundColor: 'cyan',
+    backgroundColor: white,
+    borderBottomWidth: 2,
+    borderBottomColor: 'cyan',
   },
   horizontalView: {
     padding: 5,

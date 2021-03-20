@@ -5,9 +5,9 @@ import ButtonBlue from '../../components/buttonBlue';
 
 const SignIn = ({navigation}) => {
   return (
-    <>
+    <View style={styles.container}>
       <Text style={styles.heading}>Sign In</Text>
-      <View style={styles.container}>
+      <View style={styles.subContainer}>
         <TextInput style={styles.input} placeholder="E-mail or phone number" />
         <TextInput style={styles.input} placeholder="Password" />
         <ButtonBlue
@@ -15,7 +15,7 @@ const SignIn = ({navigation}) => {
           onPress={() => navigation.navigate('home', {name: 'Home'})}
         />
       </View>
-    </>
+    </View>
   );
 };
 

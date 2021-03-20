@@ -1,13 +1,13 @@
 import React from 'react';
-import {ScrollView} from 'react-native';
+import {View, ScrollView} from 'react-native';
 import styles from './style.js';
 import Item from '../../components/item.js';
 import {tasks_data} from '../../constants/dummydata.js';
 
 const Tasks = ({navigation}) => {
   return (
-    <>
-      <ScrollView style={styles.container}>
+    <View style={styles.container}>
+      <ScrollView style={styles.scrollContainer}>
         {tasks_data.map((res, index) => {
           return (
             <Item
@@ -20,7 +20,7 @@ const Tasks = ({navigation}) => {
           );
         })}
       </ScrollView>
-    </>
+    </View>
   );
 };
 

@@ -96,7 +96,7 @@ const ActivityFeed = ({navigation}) => {
           </Pressable>
           <Pressable
             onPress={() => {
-              navigation.navigate('dashboard');
+              navigation.navigate('dashboard', {name: 'mmm'});
               setToggle(false);
             }}>
             <Text style={styles.listItem}>Dashboard</Text>

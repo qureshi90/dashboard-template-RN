@@ -1,9 +1,10 @@
 import {StyleSheet} from 'react-native';
-import {blue} from '../../constants/color.js';
+import {blue, white} from '../../constants/color.js';
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    backgroundColor: white,
   },
   block: {
     flexDirection: 'row',
@@ -27,7 +28,8 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-    backgroundColor: 'cyan',
+    borderBottomWidth: 2,
+    borderBottomColor: 'cyan',
   },
   menuContainer: {
     flex: 1,

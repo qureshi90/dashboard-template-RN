@@ -9,7 +9,7 @@ const Notifications = ({navigation}) => {
 
   const ContentView = () => {
     return (
-      <>
+      <View style={styles.container}>
         <View style={styles.header}>
           <View style={styles.tab}>
             <Pressable onPress={() => setToggle(true)}>
@@ -25,7 +25,7 @@ const Notifications = ({navigation}) => {
           <View style={styles.tab}>{}</View>
         </View>
 
-        <ScrollView style={styles.container}>
+        <ScrollView>
           <Notification
             type={'CALENDER'}
             description={'Your staff meeting starts in 15 minutes'}
@@ -67,7 +67,7 @@ const Notifications = ({navigation}) => {
             status={true}
           />
         </ScrollView>
-      </>
+      </View>
     );
   };
 

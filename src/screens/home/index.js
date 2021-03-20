@@ -13,7 +13,7 @@ const Home = ({navigation, route}) => {
 
   const ContentView = props => {
     return (
-      <View style={styles.content}>
+      <View style={styles.container}>
         <View style={styles.header}>
           <View style={styles.tab}>
             <Pressable onPress={() => setToggle(true)}>
@@ -94,7 +94,7 @@ const Home = ({navigation, route}) => {
 
   const Menu = () => {
     return (
-      <View style={styles.container}>
+      <View style={styles.menuContainer}>
         <View style={styles.list}>
           <Pressable
             onPress={() => {

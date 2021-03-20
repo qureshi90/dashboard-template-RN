@@ -1,9 +1,12 @@
 import {StyleSheet} from 'react-native';
-import {blue} from '../../constants/color.js';
+import {blue, white} from '../../constants/color.js';
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    backgroundColor: white,
+  },
+  subContainer: {
     marginTop: '40%',
     alignItems: 'center',
   },

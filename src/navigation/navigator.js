@@ -30,9 +30,7 @@ const Navigator = () => {
   ]);
   return (
     <NavigationContainer>
-      <Stack.Navigator>
-        {/* <Stack.Screen name="notifications" component={Notifications} /> */}
-        {/* <Stack.Screen name="activityFeed" component={ActivityFeed} /> */}
+      <Stack.Navigator screenOptions={{headerShown: false}}>
         <Stack.Screen name="welcome" component={Welcome} />
         <Stack.Screen
           name="login"
