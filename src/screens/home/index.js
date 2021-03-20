@@ -36,48 +36,60 @@ const Home = ({navigation, route}) => {
             style={styles.horizontalView}
             horizontal={true}
             showsHorizontalScrollIndicator={false}>
-            <View style={styles.card}>
+            <Pressable
+              onPress={() => navigation.navigate('analytics')}
+              style={styles.card}>
               <Image
                 source={require('../../assets/icons/tasks.png')}
                 style={styles.tabIcon}
               />
               <Text>Analytics</Text>
-            </View>
-            <View style={styles.card}>
+            </Pressable>
+            <Pressable
+              onPress={() => navigation.navigate('customers')}
+              style={styles.card}>
               <Image
                 source={require('../../assets/icons/tasks.png')}
                 style={styles.tabIcon}
               />
               <Text>Customres</Text>
-            </View>
-            <View style={styles.card}>
+            </Pressable>
+            <Pressable
+              onPress={() => navigation.navigate('orders')}
+              style={styles.card}>
               <Image
                 source={require('../../assets/icons/tasks.png')}
                 style={styles.tabIcon}
               />
               <Text>Orders</Text>
-            </View>
-            <View style={styles.card}>
+            </Pressable>
+            <Pressable
+              onPress={() => navigation.navigate('tasks')}
+              style={styles.card}>
               <Image
                 source={require('../../assets/icons/tasks.png')}
                 style={styles.tabIcon}
               />
               <Text>Tasks</Text>
-            </View>
-            <View style={styles.card}>
+            </Pressable>
+            <Pressable
+              onPress={() => navigation.navigate('sales')}
+              style={styles.card}>
               <Image
                 source={require('../../assets/icons/tasks.png')}
                 style={styles.tabIcon}
               />
               <Text>Sales</Text>
-            </View>
-            <View style={styles.card}>
+            </Pressable>
+            <Pressable
+              onPress={() => navigation.navigate('products')}
+              style={styles.card}>
               <Image
                 source={require('../../assets/icons/tasks.png')}
                 style={styles.tabIcon}
               />
               <Text>Products</Text>
-            </View>
+            </Pressable>
           </ScrollView>
           <Text style={styles.heading}>Overview</Text>
           <View>
