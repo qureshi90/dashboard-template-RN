@@ -37,7 +37,7 @@ const Home = ({navigation, route}) => {
             horizontal={true}
             showsHorizontalScrollIndicator={false}>
             <Pressable
-              onPress={() => navigation.navigate('analytics')}
+              onPress={() => navigation.navigate('analytics', {back: 'Home'})}
               style={styles.card}>
               <Image
                 source={require('../../assets/icons/tasks.png')}
@@ -46,7 +46,7 @@ const Home = ({navigation, route}) => {
               <Text>Analytics</Text>
             </Pressable>
             <Pressable
-              onPress={() => navigation.navigate('customers')}
+              onPress={() => navigation.navigate('customers', {back: 'Home'})}
               style={styles.card}>
               <Image
                 source={require('../../assets/icons/tasks.png')}
@@ -55,7 +55,7 @@ const Home = ({navigation, route}) => {
               <Text>Customres</Text>
             </Pressable>
             <Pressable
-              onPress={() => navigation.navigate('orders')}
+              onPress={() => navigation.navigate('orders', {back: 'Home'})}
               style={styles.card}>
               <Image
                 source={require('../../assets/icons/tasks.png')}
@@ -64,7 +64,7 @@ const Home = ({navigation, route}) => {
               <Text>Orders</Text>
             </Pressable>
             <Pressable
-              onPress={() => navigation.navigate('tasks')}
+              onPress={() => navigation.navigate('tasks', {back: 'Home'})}
               style={styles.card}>
               <Image
                 source={require('../../assets/icons/tasks.png')}
@@ -73,7 +73,7 @@ const Home = ({navigation, route}) => {
               <Text>Tasks</Text>
             </Pressable>
             <Pressable
-              onPress={() => navigation.navigate('sales')}
+              onPress={() => navigation.navigate('sales', {back: 'Home'})}
               style={styles.card}>
               <Image
                 source={require('../../assets/icons/tasks.png')}
@@ -82,7 +82,7 @@ const Home = ({navigation, route}) => {
               <Text>Sales</Text>
             </Pressable>
             <Pressable
-              onPress={() => navigation.navigate('products')}
+              onPress={() => navigation.navigate('products', {back: 'Home'})}
               style={styles.card}>
               <Image
                 source={require('../../assets/icons/tasks.png')}

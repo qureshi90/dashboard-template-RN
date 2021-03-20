@@ -1,13 +1,19 @@
 import React from 'react';
-import {ScrollView} from 'react-native';
+import {View, ScrollView} from 'react-native';
 import styles from './style.js';
 import Item from '../../components/item.js';
+import Header from '../../components/header.js';
 import {customers_data} from '../../constants/dummydata.js';
 
-const Customers = ({navigation}) => {
+const Customers = ({navigation, route}) => {
   return (
-    <>
-      <ScrollView style={styles.container}>
+    <View style={styles.container}>
+      <Header
+        pre={route.params.back}
+        title={'Customers'}
+        onPress={() => navigation.goBack()}
+      />
+      <ScrollView style={styles.subContainer}>
         {customers_data.map((res, index) => {
           return (
             <Item
@@ -20,7 +26,7 @@ const Customers = ({navigation}) => {
           );
         })}
       </ScrollView>
-    </>
+    </View>
   );
 };
 
