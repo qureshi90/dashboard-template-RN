@@ -1,18 +1,40 @@
 import React from 'react';
-import {View, Text, StyleSheet} from 'react-native';
+import {View, Text, StyleSheet, Pressable, Image} from 'react-native';
 // import {blue} from '../constants/color.js';
 
-const Header = props => {
+const Header = (props, {route}) => {
   return (
-    <View>
-      <Text style={styles.text}>{props.text}</Text>
+    <View style={styles.header}>
+      <View style={styles.item}>
+        <Pressable onPress={props.onPress}>
+          <Image
+            source={require('../assets/icons/menu.png')}
+            style={styles.icon}
+          />
+          <Text>Back</Text>
+        </Pressable>
+      </View>
+
+      <View style={styles.item}>
+        <Text>Home</Text>
+      </View>
+
+      <View style={styles.item}>{}</View>
     </View>
   );
 };
 
 const styles = StyleSheet.create({
-  text: {
-    fontSize: 14,
+  header: {
+    flexDirection: 'row',
+  },
+  item: {
+    width: '33%',
+  },
+  icon: {
+    height: 30,
+    width: 30,
+    margin: 5,
   },
 });
 

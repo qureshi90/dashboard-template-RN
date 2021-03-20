@@ -23,7 +23,7 @@ const data = {
       strokeWidth: 2, // optional
     },
   ],
-  legend: ['Rainy Days'], // optional
+  // legend: ['Analytics'], // optional
 };
 
 const Bezier = () => {

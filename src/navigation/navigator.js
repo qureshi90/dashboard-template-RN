@@ -44,7 +44,11 @@ const Navigator = () => {
           component={SignUp}
           options={({route}) => ({title: route.params.name})}
         />
-        <Stack.Screen name="home" component={Home} />
+        <Stack.Screen
+          name="home"
+          component={Home}
+          options={({route}) => ({title: route.params.name})}
+        />
         <Stack.Screen
           name="dashboard"
           component={Dashboard}
