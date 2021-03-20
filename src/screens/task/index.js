@@ -2,10 +2,16 @@ import React from 'react';
 import {View, Text, Image} from 'react-native';
 import styles from './style.js';
 import ListItem from '../../components/listItem.js';
+import Header from '../../components/header.js';
 
-const Task = () => {
+const Task = ({navigation, route}) => {
   return (
     <View style={styles.container}>
+      <Header
+        pre={route.params.back}
+        title={'Publish new...'}
+        onPress={() => navigation.goBack()}
+      />
       <View style={styles.photoContainer}>
         <Image
           style={styles.photo}

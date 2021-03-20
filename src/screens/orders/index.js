@@ -9,7 +9,7 @@ const Orders = ({navigation, route}) => {
   return (
     <View style={styles.container}>
       <Header
-        // pre={route.params.back}
+        pre={route.params.back}
         title={'Orders'}
         onPress={() => navigation.goBack()}
       />
@@ -21,7 +21,7 @@ const Orders = ({navigation, route}) => {
               name={res.name}
               description={res.description}
               status={res.status}
-              onPress={() => navigation.navigate('order')}
+              onPress={() => navigation.navigate('order', {back: 'Orders'})}
             />
           );
         })}

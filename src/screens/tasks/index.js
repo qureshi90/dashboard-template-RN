@@ -21,7 +21,7 @@ const Tasks = ({navigation, route}) => {
               name={res.name}
               description={res.description}
               status={res.status}
-              onPress={() => navigation.navigate('task')}
+              onPress={() => navigation.navigate('task', {back: 'Tasks'})}
             />
           );
         })}

@@ -21,7 +21,9 @@ const Customers = ({navigation, route}) => {
               name={res.name}
               description={res.description}
               status={res.status}
-              onPress={() => navigation.navigate('customer')}
+              onPress={() =>
+                navigation.navigate('customer', {back: 'Customers'})
+              }
             />
           );
         })}
