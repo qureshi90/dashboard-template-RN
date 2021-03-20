@@ -25,7 +25,7 @@ const Home = ({navigation, route}) => {
           </View>
 
           <View style={styles.tab}>
-            <Text style={styles.head}>{route.params.name}</Text>
+            <Text style={styles.head}>Home</Text>
           </View>
 
           <View style={styles.tab}>{}</View>
