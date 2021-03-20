@@ -4,7 +4,7 @@ import styles from './style.js';
 
 import Drawer from 'react-native-drawer';
 import Bezier from '../../components/bezier.js';
-import Orders from '../orders';
+// import Orders from '../orders';
 // import Header from '../../components/header';
 // import Menu from '../../components/sideMenu.js';
 
@@ -95,10 +95,10 @@ const Home = ({navigation, route}) => {
           <View>
             <Bezier />
           </View>
-          <Text style={styles.heading}>Recent Orders</Text>
+          {/* <Text style={styles.heading}>Recent Orders</Text>
           <View>
             <Orders />
-          </View>
+          </View> */}
         </ScrollView>
       </View>
     );

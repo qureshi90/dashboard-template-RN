@@ -2,11 +2,17 @@ import React from 'react';
 import {View, ScrollView} from 'react-native';
 import styles from './style.js';
 import Item from '../../components/item.js';
+import Header from '../../components/header.js';
 import {tasks_data} from '../../constants/dummydata.js';
 
-const Tasks = ({navigation}) => {
+const Tasks = ({navigation, route}) => {
   return (
     <View style={styles.container}>
+      <Header
+        pre={route.params.back}
+        title={'Tasks'}
+        onPress={() => navigation.goBack()}
+      />
       <ScrollView style={styles.scrollContainer}>
         {tasks_data.map((res, index) => {
           return (
