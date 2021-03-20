@@ -15,9 +15,7 @@ const Customers = ({navigation}) => {
               name={res.name}
               description={res.description}
               status={res.status}
-              onPress={() =>
-                navigation.navigate('customer', {name: 'customers'})
-              }
+              onPress={() => navigation.navigate('customer')}
             />
           );
         })}

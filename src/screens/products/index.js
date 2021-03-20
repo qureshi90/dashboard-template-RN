@@ -15,7 +15,7 @@ const Products = ({navigation}) => {
               name={res.name}
               description={res.description}
               status={res.status}
-              onPress={() => navigation.navigate('product', {name: 'products'})}
+              onPress={() => navigation.navigate('product')}
             />
           );
         })}

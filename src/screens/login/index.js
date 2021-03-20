@@ -10,10 +10,7 @@ const SignIn = ({navigation}) => {
       <View style={styles.subContainer}>
         <TextInput style={styles.input} placeholder="E-mail or phone number" />
         <TextInput style={styles.input} placeholder="Password" />
-        <ButtonBlue
-          text="Log In"
-          onPress={() => navigation.navigate('home', {name: 'Home'})}
-        />
+        <ButtonBlue text="Log In" onPress={() => navigation.navigate('home')} />
       </View>
     </View>
   );

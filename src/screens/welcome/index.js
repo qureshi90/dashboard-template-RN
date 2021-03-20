@@ -11,11 +11,11 @@ const Welcome = ({navigation}) => {
         <Text style={styles.heading}>Welcome to your dashboard.</Text>
         <ButtonBlue
           text="Log In"
-          onPress={() => navigation.navigate('login', {name: 'welcome'})}
+          onPress={() => navigation.navigate('login')}
         />
         <ButtonWhite
           text="Sign Up"
-          onPress={() => navigation.navigate('signup', {name: 'welcome'})}
+          onPress={() => navigation.navigate('signup')}
         />
       </View>
     </View>

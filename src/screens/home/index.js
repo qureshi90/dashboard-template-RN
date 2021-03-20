@@ -98,42 +98,42 @@ const Home = ({navigation, route}) => {
         <View style={styles.list}>
           <Pressable
             onPress={() => {
-              navigation.navigate('home', {name: 'mmm'});
+              navigation.navigate('home');
               setToggle(false);
             }}>
             <Text style={styles.listItem}>Home</Text>
           </Pressable>
           <Pressable
             onPress={() => {
-              navigation.navigate('dashboard', {name: 'mmm'});
+              navigation.navigate('dashboard');
               setToggle(false);
             }}>
             <Text style={styles.listItem}>Dashboard</Text>
           </Pressable>
           <Pressable
             onPress={() => {
-              navigation.navigate('orders', {name: 'mmm'});
+              navigation.navigate('orders');
               setToggle(false);
             }}>
             <Text style={styles.listItem}>Orders</Text>
           </Pressable>
           <Pressable
             onPress={() => {
-              navigation.navigate('notifications', {name: 'mmm'});
+              navigation.navigate('notifications');
               setToggle(false);
             }}>
             <Text style={styles.listItem}>Notifications</Text>
           </Pressable>
           <Pressable
             onPress={() => {
-              navigation.navigate('feed', {name: 'mmm'});
+              navigation.navigate('feed');
               setToggle(false);
             }}>
             <Text style={styles.listItem}>Activity</Text>
           </Pressable>
           <Pressable
             onPress={() => {
-              navigation.navigate('welcome', {name: 'mmm'});
+              navigation.navigate('welcome');
               setToggle(false);
             }}>
             <Text style={styles.listItem}>Logout</Text>
