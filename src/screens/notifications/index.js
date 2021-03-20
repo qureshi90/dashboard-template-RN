@@ -91,7 +91,7 @@ const Notifications = ({navigation}) => {
           </Pressable>
           <Pressable
             onPress={() => {
-              navigation.navigate('orders');
+              navigation.navigate('orders', {back: 'Notifications'});
               setToggle(false);
             }}>
             <Text style={styles.listItem}>Orders</Text>

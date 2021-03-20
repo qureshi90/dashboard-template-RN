@@ -124,7 +124,7 @@ const Home = ({navigation, route}) => {
           </Pressable>
           <Pressable
             onPress={() => {
-              navigation.navigate('orders');
+              navigation.navigate('orders', {back: 'Home'});
               setToggle(false);
             }}>
             <Text style={styles.listItem}>Orders</Text>

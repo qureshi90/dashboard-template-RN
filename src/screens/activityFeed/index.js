@@ -96,35 +96,35 @@ const ActivityFeed = ({navigation}) => {
           </Pressable>
           <Pressable
             onPress={() => {
-              navigation.navigate('dashboard', {name: 'mmm'});
+              navigation.navigate('dashboard');
               setToggle(false);
             }}>
             <Text style={styles.listItem}>Dashboard</Text>
           </Pressable>
           <Pressable
             onPress={() => {
-              navigation.navigate('orders', {name: 'mmm'});
+              navigation.navigate('orders', {back: 'Feed'});
               setToggle(false);
             }}>
             <Text style={styles.listItem}>Orders</Text>
           </Pressable>
           <Pressable
             onPress={() => {
-              navigation.navigate('notifications', {name: 'mmm'});
+              navigation.navigate('notifications');
               setToggle(false);
             }}>
             <Text style={styles.listItem}>Notifications</Text>
           </Pressable>
           <Pressable
             onPress={() => {
-              navigation.navigate('feed', {name: 'mmm'});
+              navigation.navigate('feed');
               setToggle(false);
             }}>
             <Text style={styles.listItem}>Activity</Text>
           </Pressable>
           <Pressable
             onPress={() => {
-              navigation.navigate('welcome', {name: 'mmm'});
+              navigation.navigate('welcome');
               setToggle(false);
             }}>
             <Text style={styles.listItem}>Logout</Text>
