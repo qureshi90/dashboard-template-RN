@@ -14,9 +14,9 @@ const ButtonBlue = props => {
 
 const styles = StyleSheet.create({
   button: {
-    height: '7%',
+    height: 40,
     width: '70%',
-    marginVertical: 10,
+    marginVertical: 15,
     justifyContent: 'center',
     borderRadius: 30,
     backgroundColor: blue,

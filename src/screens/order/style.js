@@ -1,9 +1,10 @@
 import {StyleSheet} from 'react-native';
-import {gray, darkGray} from '../../constants/color.js';
+import {gray, darkGray, white} from '../../constants/color.js';
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    backgroundColor: white,
   },
   photo: {
     width: 150,

@@ -2,10 +2,16 @@ import React from 'react';
 import {View, Text, Image} from 'react-native';
 import styles from './style.js';
 import ListItem from '../../components/listItem.js';
+import Header from '../../components/header.js';
 
-const Order = () => {
+const Order = ({navigation, route}) => {
   return (
     <View style={styles.container}>
+      <Header
+        pre={route.params.back}
+        title={'Skater Dress 3'}
+        onPress={() => navigation.goBack()}
+      />
       <View style={styles.photoContainer}>
         <Image
           style={styles.photo}

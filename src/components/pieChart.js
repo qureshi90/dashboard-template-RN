@@ -19,16 +19,9 @@ const data = [
     legendFontSize: 15,
   },
   {
-    name: 'Beijing',
-    population: 6276120,
-    color: 'red',
-    legendFontColor: '#7F7F7F',
-    legendFontSize: 15,
-  },
-  {
     name: 'New York',
     population: 8538000,
-    color: '#ffffff',
+    color: '#333',
     legendFontColor: '#7F7F7F',
     legendFontSize: 15,
   },

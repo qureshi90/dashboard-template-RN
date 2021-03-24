@@ -4,9 +4,9 @@ import {Dimensions} from 'react-native';
 const screenWidth = Dimensions.get('window').width;
 
 const chartConfig = {
-  backgroundGradientFrom: '#AFF',
+  backgroundGradientFrom: '#FFF',
   // backgroundGradientFromOpacity: 1,
-  backgroundGradientTo: '#AFF',
+  backgroundGradientTo: '#FFF',
   // backgroundGradientToOpacity: 1,
   color: (opacity = 1) => `rgba(0, 0, 0, ${opacity})`,
   strokeWidth: 2, // optional, default 3
@@ -23,7 +23,7 @@ const data = {
       strokeWidth: 2, // optional
     },
   ],
-  legend: ['Rainy Days'], // optional
+  // legend: ['Analytics'], // optional
 };
 
 const Bezier = () => {

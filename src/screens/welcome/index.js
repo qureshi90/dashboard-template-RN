@@ -7,15 +7,17 @@ import ButtonBlue from '../../components/buttonBlue';
 const Welcome = ({navigation}) => {
   return (
     <View style={styles.container}>
-      <Text style={styles.heading}>Welcome to your dashboard.</Text>
-      <ButtonBlue
-        text="Log In"
-        onPress={() => navigation.navigate('login', {name: 'welcome'})}
-      />
-      <ButtonWhite
-        text="Sign Up"
-        onPress={() => navigation.navigate('signup', {name: 'welcome'})}
-      />
+      <View style={styles.subContainer}>
+        <Text style={styles.heading}>Welcome to your dashboard.</Text>
+        <ButtonBlue
+          text="Log In"
+          onPress={() => navigation.navigate('login')}
+        />
+        <ButtonWhite
+          text="Sign Up"
+          onPress={() => navigation.navigate('signup')}
+        />
+      </View>
     </View>
   );
 };

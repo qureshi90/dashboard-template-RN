@@ -6,14 +6,6 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: white,
   },
-  header: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    backgroundColor: white,
-    borderBottomWidth: 2,
-    borderBottomColor: 'cyan',
-  },
   menuContainer: {
     flex: 1,
     backgroundColor: 'cyan',
@@ -30,6 +22,29 @@ const styles = StyleSheet.create({
   menuIcon: {
     height: 20,
     width: 20,
+    margin: 10,
+  },
+  header: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    backgroundColor: white,
+    borderBottomWidth: 2,
+    borderBottomColor: 'cyan',
+  },
+  horizontalView: {
+    padding: 5,
+  },
+  card: {
+    margin: 10,
+    alignItems: 'center',
+  },
+  tabIcon: {
+    height: 50,
+    width: 50,
+  },
+  heading: {
+    fontSize: 20,
     margin: 10,
   },
   tab: {
